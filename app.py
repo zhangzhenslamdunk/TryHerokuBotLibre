@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# for bot libre
 import urllib
 import json
 import os
@@ -15,8 +15,8 @@ app = Flask(__name__)
 def webhook():
     req = request.get_json(silent=True, force=True)
 
-    print("Request:")
-    print(json.dumps(req, indent=4))
+#    print("Request:")
+#    print(json.dumps(req, indent=4))
     res = makeWebhookResult(req)
 
     res = json.dumps(res, indent=4)
@@ -27,7 +27,7 @@ def webhook():
 
 def makeWebhookResult(req):
 
-    speech = 'this is the first message sent from Heroku for bot Libre.'
+    speech = 'this is the first message sent from Heroku.'
     
 #    # read from web data
 #    url = urllib.request.urlopen("http://zhangzhenslamdunk.github.io/sentence.txt") 
@@ -38,7 +38,7 @@ def makeWebhookResult(req):
 #    infile = open('sentence.txt')
 #    s = infile.read()
     
-    speech = s
+#    speech = s
     
     
     print("Response:")
