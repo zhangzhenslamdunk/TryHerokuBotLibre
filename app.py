@@ -43,9 +43,7 @@ def makeWebhookResult(req):
     
     print("Response:")
     print(speech)
-    return {
-        "fulfillmentText": speech,
-    }
+    return speech
 
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
