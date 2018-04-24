@@ -27,7 +27,7 @@ def webhook():
 
 def makeWebhookResult(req):
 
-    speech = 'this is the first message sent from Heroku.'
+    speech = 'this is the first message sent from Heroku for Bot Libre.'
     
 #    # read from web data
 #    url = urllib.request.urlopen("http://zhangzhenslamdunk.github.io/sentence.txt") 
