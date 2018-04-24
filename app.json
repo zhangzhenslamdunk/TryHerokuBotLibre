@@ -1,0 +1,7 @@
+{
+  "name": "Heroku Demo Chatbot",
+  "description": "Heroku Demo Chatbot",
+  "repository": "https://github.com/zhangzhenslamdunk/TryHeroku",
+  "logo": "https://raw.githubusercontent.com/zhangzhenslamdunk/TryHeroku/master/SDSC.png",
+  "keywords": ["Heroku", "Chatbot"]
+}
