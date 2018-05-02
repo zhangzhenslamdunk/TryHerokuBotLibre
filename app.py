@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 # Flask app should start in global layout
 app = Flask(__name__)
-CORS(app)
+
 '''
 @app.after_request
 def after_request(response):
