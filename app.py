@@ -13,14 +13,17 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 
-def options (self):
-    return {'Allow' : 'PUT' }, 200, \
-    { 'Access-Control-Allow-Origin': '*', \
-      'Access-Control-Allow-Methods' : 'PUT,GET' }
+
 
 
 
 @app.route('/webhook', methods=['POST'])
+
+def options (self):
+    return {'Allow' : 'PUT' }, 200, \
+    { 'Access-Control-Allow-Origin': '*', \
+      'Access-Control-Allow-Methods' : 'PUT,GET' }
+    
 def webhook():
     req = request.get_json(silent=True, force=True)
 
