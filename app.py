@@ -7,9 +7,16 @@ import os
 from flask import Flask
 from flask import request
 from flask import make_response
+from flask_cors import CORS
 
 # Flask app should start in global layout
 app = Flask(__name__)
+
+
+app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
