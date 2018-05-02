@@ -13,8 +13,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 
-app = Flask(__name__)
-cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
+def options (self):
+    return {'Allow' : 'PUT' }, 200, \
+    { 'Access-Control-Allow-Origin': '*', \
+      'Access-Control-Allow-Methods' : 'PUT,GET' }
 
 
 
